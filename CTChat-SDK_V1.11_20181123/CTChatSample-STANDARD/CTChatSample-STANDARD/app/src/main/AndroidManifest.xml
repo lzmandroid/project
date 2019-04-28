@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ctchat.sample">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--直播权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".application.WeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ctchat.sample.login.LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ctchat.sample.MainActivity" />
+
+        <activity android:name="com.ctchat.sample.ContactDetailActivity" />
+        <activity
+            android:name="com.ctchat.sample.IntercomActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ctchat.sample.IntercomingAlertActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.ctchat.sample.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctchat.sample.NewMessageRemindActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctchat.sample.IntercomSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctchat.sample.VideoCameraActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ctchat.sample.VideoMessagePlayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".RemoteLoginAlertActivity" />
+        <activity android:name=".login.ChangePasswordActivity" />
+        <activity android:name=".BroadcastNotificationActivity" />
+        <activity android:name=".DisFuncChangeAlertActivity" />
+
+        <receiver android:name=".receiver.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

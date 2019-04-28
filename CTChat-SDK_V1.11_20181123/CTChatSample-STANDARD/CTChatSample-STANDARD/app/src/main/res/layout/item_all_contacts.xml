@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_contacts_list_item"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/iv_contacts_icon_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:text="未选"/>
+
+        <TextView
+            android:id="@+id/tv_contacts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_contacts_icon_default"
+            android:layout_toLeftOf="@+id/iv_contacts_version"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@id/iv_contacts_icon_default"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/contact_name_color"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/iv_contacts_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_contacts_icon_default"
+            android:paddingLeft="12dp"
+            android:textColor="@color/contact_number_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/iv_contacts_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/contact_offline_color" />
+    </RelativeLayout>
+</LinearLayout>

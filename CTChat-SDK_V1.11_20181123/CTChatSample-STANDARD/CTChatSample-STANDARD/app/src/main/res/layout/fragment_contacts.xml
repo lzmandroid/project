@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_left_contacts_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_contacts"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/tb_right_contacts_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="列表" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_bottom_color"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_contact_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_to_refresh_refreshing_label"
+                android:textColor="@color/contact_number_bg"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <com.ctchat.sample.widget.PullToRefreshView
+                android:id="@+id/pv_all_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparency"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_all_contacts_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/divider_bottom_color"
+                    android:dividerHeight="1dp"
+                    android:cacheColorHint="@color/transparent"
+                    android:fadingEdge="none" />
+            </com.ctchat.sample.widget.PullToRefreshView>
+
+            <com.ctchat.sample.widget.PullToRefreshView
+                android:id="@+id/pv_tree_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_tree_contacts_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/divider_bottom_color"
+                    android:dividerHeight="1dp"
+                    android:cacheColorHint="@color/transparent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:fadingEdge="none" />
+            </com.ctchat.sample.widget.PullToRefreshView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_contacts_fragment_side_bar"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

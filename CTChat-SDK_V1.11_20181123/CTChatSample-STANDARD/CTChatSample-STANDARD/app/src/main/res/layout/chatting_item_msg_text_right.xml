@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/chatting_messagedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/message_content"
+        android:text="2016-07-08 10:29:00"
+        android:textColor="@color/message_date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/chatting_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chatting_messagedate"
+        android:layout_toLeftOf="@id/chatting_userheader"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:text=""
+        />
+
+    <ImageView
+        android:id="@+id/chatting_userheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/message_content"
+        android:src="@drawable/groups_user" />
+
+    <RelativeLayout
+        android:id="@id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chatting_username"
+        android:layout_toLeftOf="@id/chatting_userheader"
+        android:background="@color/black">
+
+        <!--图片布局-->
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <!--视频布局-->
+        <RelativeLayout
+            android:id="@+id/rl_video_contant"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_videomessage_send_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/video_contant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/iv_video_play_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intercom_speechme_start"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!--文本布局-->
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <!--音频布局-->
+        <RelativeLayout
+            android:id="@+id/message_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/message_voice_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/iv_voice_message" />
+
+            <TextView
+                android:id="@+id/message_voice_ptt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/message_voice_duration"
+                android:text="PTT"
+                android:textSize="8sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!--位置布局-->
+        <RelativeLayout
+            android:id="@+id/message_location"
+            android:visibility="gone"
+            android:layout_width="160dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:background="@drawable/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_location_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text=""
+                android:background="@color/location_message_background"/>
+
+        </RelativeLayout>
+
+        <!--系统消息布局-->
+        <LinearLayout
+            android:id="@+id/message_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_system_msg_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="呼出"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_send_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_send_arrow"
+        android:layout_alignTop="@id/message_content"
+        android:layout_toLeftOf="@id/message_content"
+        android:visibility="invisible"
+        android:layout_toStartOf="@id/message_content" />
+
+</RelativeLayout>
+
+

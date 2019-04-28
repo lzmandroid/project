@@ -1,0 +1,591 @@
+<resources>
+    <string name="app_name">CTChat</string>
+    <!--前台服务通知-->
+    <string name="notification_service_title">对讲服务</string>
+    <string name="notification_service_content">对讲服务已经在前台启动</string>
+    <string name="notification_app_crash">很抱歉,程序出现异常,即将退出</string>
+
+    <!-- CustomDialog -->
+    <string name="please_new_temp_group_name">请添加收藏临时组名称</string>
+    <string name="temp_group_name_empty">临时组名不可为空</string>
+    <string name="temp_group_svae_success">临时组保存成功</string>
+    <string name="temp_group_svae_error">临时组保存失败</string>
+    <string name="temp_group_delete_confirm">是否取消收藏此临时组？</string>
+
+    <!--LoginActivity-->
+    <string name="login">确认登录</string>
+    <string name="login_loading">登录中......</string>
+    <string name="registration">注册</string>
+    <string name="exit">退出</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="hint">提示</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_username_empty_error_tip">输入账号不能为空</string>
+    <string name="login_password_empty_error_tip">输入密码不能为空</string>
+    <string name="login_username_error_tip">输入账号有误&#8230;</string>
+    <string name="login_password_error_tip">输入密码有误&#8230;</string>
+    <string name="login_user_id_hint">输入您的账号</string>
+    <string name="login_user_password_hint">输入您的密码</string>
+    <string name="ptt_account_result_err_invalid">无效账号</string>
+    <string name="ptt_account_result_err_user_not_exist">账号不存在</string>
+    <string name="ptt_account_result_err_user_pwd">密码错误</string>
+    <string name="ptt_account_result_err_in_blacklist">黑名单账号无法登入</string>
+    <string name="ptt_account_result_err_not_acceptable">登入异常（账号无权限）</string>
+    <string name="ptt_account_result_err_pwd_dup">密码错误</string>
+    <string name="ptt_account_result_err_server_unavailable">服务器异常</string>
+    <string name="ptt_account_result_err_account_limited">登入异常（权限受限）</string>
+    <string name="ptt_account_result_err_account_expire">账号已过期</string>
+    <string name="ptt_account_result_err_account_forbidden">登入异常（账号被禁用）</string>
+    <string name="ptt_account_result_err_code_expire">应用使用服务到期</string>
+    <string name="net_error">网络异常</string>
+    <string name="net_error_message">网络链接错误</string>
+    <string name="net_error_user_pwd">账号密码错误</string>
+    <string name="net_error_model">设备型号未经授权</string>
+    <string name="ptt_account_result_err_single">登入延迟</string>
+    <string name="ptt_account_result_err_license">应用未经授权</string>
+    <string name="ptt_account_result_err_account_duplicate">账号错误</string>
+    <string name="net_disconnect_notice">网络或服务中断，请重新连接网络</string>
+    <string name="default_loading_tip">加载中......</string>
+    <string name="out_loading">恢复数据中....</string>
+
+    <!--登录接口失败错误-->
+    <string name="check_valid_err_device_id">设备ID未录入，请联系管理员</string>
+    <string name="check_valid_err_unauth_device">未授权终端，请联系管理员</string>
+
+    <string name="ptt_library_warning">警告</string>
+    <string name="ptt_library_accounts_remote_login">您的账号在异地登入</string>
+    <string name="ptt_library_ptt_reLogin">重新登入</string>
+    <string name="ptt_library_exit_application">退出应用</string>
+    <string name="dispatcher_function_change">您的调度台功能发生变化</string>
+    <!--MainActivity-->
+    <string name="contact">联系人</string>
+    <string name="channel">预定义组</string>
+    <string name="history">记录</string>
+    <string name="exit_application_tip">再按返回键应用将在后台运行</string>
+    <string name="search">搜索</string>
+    <string name="remote_forbid">该用户处于遥毙状态，禁止登录</string>
+    <string name="much_password_request">密码验证次数超限，禁止登录</string>
+
+    <!--ContactsFragment-->
+    <string name="all_contacts">全部联系人</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="reception_online">前台在线</string>
+    <string name="bg_online">后台在线</string>
+    <string name="back">返回</string>
+    <string name="online_status">在线情况</string>
+    <string name="contact_number">联系电话</string>
+    <string name="contact_account">用户账号</string>
+    <string name="department">所在部门</string>
+    <string name="administration_department">行政部</string>
+    <string name="start_talk">发起对讲</string>
+    <string name="immediate_message">即时消息</string>
+    <string name="create_temp_group">新建临时组</string>
+    <string name="prefine_group">预定义组</string>
+    <string name="temp_group">临时组</string>
+    <string name="all">共</string>
+    <string name="people">人</string>
+    <string name="wait_order">待办事项（待实现）</string>
+    <string name="day_life">日常</string>
+    <string name="txt_clear">清    空</string>
+    <string name="select_theme">选择主题</string>
+    <string name="info_description">信息描述</string>
+    <string name="text_length_limit">(100字以内)</string>
+    <string name="upload_picture">上传图片</string>
+    <string name="upload_picture_from_local">本地上传</string>
+    <string name="shooting_picture">拍摄图片</string>
+    <string name="confirm_upload">确认上传</string>
+    <string name="state_free">空闲</string>
+    <string name="cloud_space_full">云存储空间不足，请联系管理员</string>
+    <string name="tree_contacts_loading">联系人数据刷新中...</string>
+
+    <!-- imfragment相关 -->
+    <string name="btn_send">发送</string>
+    <string name="down_tlak">按住说话</string>
+    <string name="up_end">松开结束</string>
+    <string name="video">视频</string>
+    <string name="take_photo">拍照</string>
+    <string name="location">位置</string>
+    <string name="empty_content">内容为空</string>
+    <string name="upload_video">上传视频</string>
+    <string name="shooting_video">拍摄视频</string>
+    <string name="copy_right">复制成功</string>
+    <string name="delete_all_success">消息已清空</string>
+    <string name="delete_success">删除成功</string>
+    <string name="message_resend">消息已重发</string>
+
+    <!--PullToRefreshView-->
+    <string name="pull_to_refresh_pull_label">刷新数据</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开加载</string>
+    <string name="pull_to_refresh_footer_pull_label">加载数据</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_latest_time_label">最近更新</string>
+    <string name="no_theme">无主题</string>
+
+    <!--IntercomActivity-->
+    <string name="intercomimactivity_getpicturefail">图片获取失败</string>
+    <string name="voice_cancel_tips">松开手指,取消发送</string>
+    <string name="voice_up_tips">手指上滑,取消操作</string>
+    <string name="action_settings">设置</string>
+    <string name="video_recorder">视频</string>
+    <string name="call_tempgroup">临时会话</string>
+    <string name="intercom_state_talking">发言中</string>
+    <string name="talk_request">申请中</string>
+    <string name="intercom_state_free">空闲</string>
+    <string name="intercom_state_center_wait">正在分配调度员...</string>
+    <string name="intercom_state_offline">未连接</string>
+    <string name="exit_session_tip">再按返回键结束当前会话</string>
+    <string name="session_wait">当前会话请求等待人数：</string>
+    <string name="pars_json_fail">解析JSON错误</string>
+    <string name="setting_up_the_session">会话建立中</string>
+    <string name="phone_calls_remind">来电提醒</string>
+    <string name="call_from">来电</string>
+    <string name="call_center_err">调度员忙，请稍后再试</string>
+
+    <string name="intercom_channel_manager_grab_enable">抢断模式已开启，您可以随时抢断低级别用户的讲话！</string>
+    <string name="intercom_channel_manager_grab_disable">抢断模式已关闭</string>
+    <string name="intercom_channel_manager_lock_enable">锁定模式已开启，将不再监听其它预定义组会话！</string>
+    <string name="intercom_channel_manager_lock_disable">锁定模式已关闭</string>
+    <string name="intercom_tools_setting_voice_mode_earphone">听筒模式</string>
+    <string name="intercom_tools_setting_voice_mode_speaker">扬声器模式</string>
+
+    <string name="intercom_channel_tip_media_queue_in">您已进入讲话队列，请等待</string>
+    <string name="intercom_channel_tip_media_queue_out">您已退出讲话队列</string>
+    <string name="intercom_channel_tip_media_interruptted">您的讲话被高级别用户打断！</string>
+    <string name="intercom_channel_tip_media_listen_only">您没有讲话的权限！</string>
+    <string name="intercom_channel_tip_media_exception">当前网络不佳，服务器收回了您的话语权！</string>
+    <string name="intercom_channel_tip_media_timeout">当前网络不佳，一直未申请到话语权！</string>
+    <string name="intercom_channel_tip_media_timeup">您的讲话时间已到！</string>
+    <string name="intercom_channel_tip_media_speak_full">对方结束讲话后才能发言！</string>
+
+    <string name="invite_contact_number_upper">邀请人数已达上限</string>
+    <string name="invite_contact_no_empty">至少邀请一位成员</string>
+
+    <string name="intercom_im_tip_invalid_message">[不支持的消息格式]</string>
+
+
+    <string name="video_record_short">视频录制时间太短</string>
+
+    <string name="parameter_error">参数验证错误</string>
+
+    <string name="change_account">更换账号</string>
+    <string name="change_password">修改密码</string>
+    <string name="common_problem">常见问题</string>
+    <string name="flow_count">流量统计</string>
+    <string name="about">关于</string>
+    <string name="exit_login">退出登录</string>
+    <string name="exit_login_message">确定要退出登录吗</string>
+    <string name="add_contact">添加成员</string>
+    <string name="finish">完成</string>
+    <string name="new_message_remind">新消息提醒</string>
+    <string name="advanced_setting">高级设置</string>
+    <string name="intercom_setting">对讲设置</string>
+    <string name="media_setting">多媒体设置</string>
+    <string name="whether_open_new_message_remind">是否开启铃声</string>
+    <string name="whether_open_notice">是否开启通知</string>
+    <string name="whether_open_shock">是否开启振动</string>
+    <string name="chat_setting">聊天设置</string>
+    <string name="large_font">大字体</string>
+    <string name="clear_chat_history">清空聊天记录</string>
+    <string name="whether_use_volume_key_as_intercom">是否将音量键作为对讲键</string>
+    <string name="locatin_frequency">定位频度</string>
+    <string name="volume_setting">音量设置</string>
+    <string name="mute_mode">静音模式</string>
+    <string name="volume_microphone">声音放大器</string>
+    <string name="increase_intercom_quality">增强对讲音质</string>
+    <string name="screen_ptt_key">屏幕PTT按键</string>
+    <string name="volume_key">音量按键</string>
+    <string name="auto_answer">自动应答</string>
+    <string name="not_disturb">免打扰</string>
+    <string name="heart_beat_frequency_setting">心跳频率设置</string>
+    <string name="normal_mode">正常模式</string>
+    <string name="picture_upload_setting">图片上传设置</string>
+    <string name="not_wifi_notice_user">非Wifi环境，上报时提示用户</string>
+    <string name="whether_open_auto_download">是否开启自动下载</string>
+    <string name="storage_location_setting">设置存储位置</string>
+    <string name="phone_memory">手机内存</string>
+    <string name="sd_card">SD储存卡</string>
+    <string name="storage_location">存储位置</string>
+    <string name="max_size_not_exceed">最大不超过25M</string>
+    <string name="clear_history_list">清空聊天列表</string>
+    <string name="use_of_all_traffic">应用消耗的总流量</string>
+    <string name="mobile_net">移动网络</string>
+    <string name="wifi_net">无线局域网络</string>
+    <string name="heart_beat_frequency">心跳频率</string>
+    <string name="high_performance_time">高性能(5秒)</string>
+    <string name="faster_time">较快(10秒)</string>
+    <string name="medium_performance_time">中等(15秒)</string>
+    <string name="normal_mode_time">正常模式(20秒)</string>
+    <string name="low_speed_time">低速(40秒)</string>
+    <string name="confirm_clear_history">确认要清空聊天记录吗？</string>
+    <string name="current_password">当前密码:</string>
+    <string name="new_password">新密码:</string>
+    <string name="confirm_password">确认密码:</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="wrong_pwd">密码输入不正确，请重新输入</string>
+    <string name="modify_succeed">修改成功</string>
+    <string name="short_password">密码长度需大于六位，请重新输入</string>
+    <string name="inconsistent_password">两次输入密码不一致，请重新输入</string>
+    <string name="fill_all">请完整填写后再试</string>
+    <string name="modify_password_succeed">修改密码成功</string>
+    <string name="repeat_password">密码与原密码重复，请重设</string>
+    <string name="switch_account_msg">更换账号需退出应用，是否继续？</string>
+    <string name="attachment_channel_setting">附着预定义组设置</string>
+    <string name="boot_auto_start">开机自动登录</string>
+    <string name="boot_auto_start_des">选择后，开机将自动跳转登录界面</string>
+
+    <!-- VideoMessagePlayActivity -->
+    <string name="videopath_empty">视频已删除或不存在！</string>
+
+    <!-- SessionMessageAdapter -->
+    <string name="video_send_state_uploading">正在上传</string>
+    <string name="video_send_state_fail">上传失败,点击重传</string>
+    <string name="video_down_state_downloading">正在下载</string>
+    <string name="video_down_state_fail">下载失败</string>
+
+    <!-- VideoCameraActivity -->
+    <string name="camera_error">相机启动异常，请关闭当前界面重新开启</string>
+    <string name="stop_movie_recorder">录制时间太短，稍后重试</string>
+
+    <!-- HistorySessionAdapter -->
+    <string name="message_type_text">:文本消息</string>
+    <string name="message_type_picture">:图片消息</string>
+    <string name="message_type_video">:视频消息</string>
+    <string name="message_type_record">:语音消息</string>
+    <string name="message_type_location">:位置消息</string>
+    <string name="message_type_channel_alter">:呼叫消息</string>
+    <string name="cancel_select">取消选择</string>
+    <string name="history_subtag_all">全部记录</string>
+    <string name="history_subtag_calling">正在通话</string>
+    <string name="history_subtag_unanswer">未接听</string>
+    <string name="history_subtag_over">已结束</string>
+    <string name="no_message">没有新的消息</string>
+    <string name="name_from_me">我</string>
+    <string name="talking_by_myself">我 在讲话</string>
+
+    <!-- HistorySessionFragment -->
+    <string name="select_no_type">预定义组通话中，无法删除</string>
+
+    <!-- 呼叫相关 -->
+    <string name="talk_call_state_missed_group_call">(群呼上线未接)[Missed call]</string>
+    <string name="talk_call_state_missed_call">(呼叫未接)[Missed call]</string>
+    <string name="talk_call_state_rejected_call">(呼叫拒接)[Rejected call]</string>
+    <string name="talk_call_state_outgoing_call">(呼出)[Dialed call]</string>
+    <string name="talk_call_state_incoming_call">(呼入)[Received call]</string>
+
+    <!--popupWindow相关-->
+    <string name="pop_msg_del_all">清空全部</string>
+    <string name="pop_msg_del">删除</string>
+    <string name="pop_msg_resend">重发</string>
+    <string name="pop_msg_copy">复制</string>
+    <string name="pop_broadcast_delete">删除记录</string>
+
+    <string name="invite_call_has_send">会话邀请已发送</string>
+    <string name="about_company_info">CTChat，版权所有</string>
+    <string name="about_copyright">Copyright@2016 </string>
+    <string name="about_rights">All Right Reserved</string>
+    <string name="auto_login_next_time">下次自动登录</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="txt_ok">确认</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_clear_uploadlist">确定清空所有上传内容?</string>
+    <string name="invalid_file">无效文件</string>
+
+    <!-- PttFragment相关 -->
+    <string name="no_ptt_record">没有对讲记录</string>
+    <string name="bluetooth_device_connected">蓝牙设备已连接</string>
+    <string name="bluetooth_open_failed">蓝牙设备打开失败</string>
+
+    <!-- LocationActivity相关 -->
+    <string name="location_send_error">地址获取失败，请稍后重试</string>
+
+    <!-- BroadcastNotificationActivity 相关 -->
+    <string name="broadcast_delete">条广播已删除</string>
+
+    <!--BluetoothDeviceListActivity相关-->
+    <string name="select_bluetooth_device">选择连接蓝牙</string>
+    <string name="bt_sys_config">去设置</string>
+    <string name="bt_no_paired_device">没有已配对的蓝牙手咪设备</string>
+    <string name="bt_sys_not_connected">请先在蓝牙设置中连接此设备</string>
+    <string name="bt_connect_ing">连接中</string>
+    <string name="bt_connect_fail">连接失败</string>
+    <string name="bt_connect_ed">连接成功</string>
+    <string name="bt_scan_failed">扫描失败</string>
+    <string name="bt_scan_empty">未扫描到可用蓝牙设备，请重试&#8230;</string>
+
+    <string name="set_frequency_error">统一频度，定位频度设置失败！</string>
+    <string name="error_low_frequency">频度设置不能低于1分钟</string>
+    <string name="setting_location_frequency">设置定位频度</string>
+    <string name="hour">小时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="broadcast_notification">广播通知</string>
+    <string name="unread_message">未读消息</string>
+    <string name="have_read_message">已读消息</string>
+    <string name="many_people_session">多人会话</string>
+    <string name="broadcast">广播消息</string>
+    <string name="dispatcher_call">您确定要呼叫调度中心吗？</string>
+    <string name="group_call_online">群呼上线</string>
+    <string name="in">在</string>
+    <string name="start_group_call">发起群呼上线通知</string>
+    <string name="not_join">暂不加入</string>
+    <string name="join_session">加入会话</string>
+    <string name="confirm_join_warning">加入此会话将会关闭当前会话，是否继续？</string>
+    <string name="group_call_already_sent">通知已发送，请</string>
+    <string name="wait_repeat">秒后重试</string>
+    <string name="not_in_session_channel">您未参与此预定义组会话，无法发起群呼</string>
+
+    <string name="talk_incoming_accept">接听</string>
+    <string name="talk_incoming_reject">拒接</string>
+    <string name="confirm">确定</string>
+    <string name="theme">主题</string>
+    <string name="loading_theme">主题加载中&#8230;</string>
+    <string name="description">描述</string>
+    <string name="talk_group_title">群组列表</string>
+    <string name="talk_session_speaker">讲话者</string>
+    <string name="talk_session_dialog">群组对话</string>
+    <string name="talk_session_member">群组成员</string>
+    <string name="talk_press_talk">按下讲话</string>
+    <string name="talk_session_call">呼叫</string>
+    <string name="talk_session_call_cancel">取消</string>
+    <string name="talk_click_talk">点击讲话</string>
+    <string name="talk_click_stop">停止讲话</string>
+    <string name="talk_click_applying">申请中&#8230;</string>
+    <string name="talk_click_releasing">释放中&#8230;</string>
+    <string name="talk_building">建立中&#8230;</string>
+    <string name="talk_calling">呼叫中&#8230;</string>
+    <string name="talk_release_queue">取消排队</string>
+    <string name="talk_handle_error">您的操作过于频繁</string>
+    <string name="talk_speak_tip">要发言</string>
+    <string name="talk_peer_end_call">对方挂断电话</string>
+    <string name="talk_shortage">对方结束讲话后才能发言！</string>
+    <string name="talk_session_hangup">挂断</string>
+    <string name="talk_session_calling">呼叫中&#8230;</string>
+    <string name="talk_session_idle">状态：空闲</string>
+    <string name="talk_session_members_max">加入成员失败，不能超过最大限制30人</string>
+    <string name="talk_chat_reject_apply_text">请在对方讲话结束后再发言！</string>
+    <string name="talk_calling_offline">呼叫的用户目前不在线!</string>
+    <string name="talk_calling_noanswer">呼叫的用户未接听！</string>
+    <string name="talk_calling_fail">呼叫建立失败，请稍后再试！</string>
+    <string name="talk_calling_server_deny">抱歉，您呼叫的用户屏蔽了陌生人！</string>
+    <string name="talk_calling_frequently">抱歉，您呼叫太频繁了，Hold住！</string>
+    <string name="talk_line_busy">您所呼叫的用户正忙，请稍候再试！</string>
+    <string name="talk_line_reject">对方拒绝了您的对讲！</string>
+    <string name="talk_had_idel">对讲已断开！</string>
+    <string name="talk_ua_hint">目前正忙，暂时无法给您提供服务！</string>
+    <string name="talk_incoming">来电</string>
+    <string name="talk_session_call_tip">请选择呼叫的成员</string>
+    <string name="talk_login_account">请输入用户名，密码</string>
+    <string name="talk_account_match">网络连接错误！</string>
+    <string name="talk_exit">退出</string>
+    <string name="talk_login">登录</string>
+    <string name="talk_input_pwd">输入密码</string>
+    <string name="talk_input_id">输入帐号</string>
+    <string name="talk_user_login">用户登录</string>
+    <string name="talk_close">关闭</string>
+    <string name="talk_try">重试</string>
+    <string name="talk_channel_build_fail">会话建立失败</string>
+    <string name="talk_channel_building">正在进入，请稍候……</string>
+    <string name="talk_channel_get_wait">群组列表加载中，请稍候……</string>
+    <string name="talk_re_login">重新登录…</string>
+    <string name="talk_login_fail">登录失败</string>
+    <string name="talk_logining">正在登陆，请稍候……</string>
+    <string name="talk_exit_channel">退出预定义组</string>
+
+    <string name="talk_channel_list_getfail">预定义组列表获取失败</string>
+    <string name="talk_network_warming">网络连接断开，请检查网络&#8230;</string>
+    <string name="talk_network_error_hint">网络连接错误，请检查您的网络设置，您需要使用net作为默认接入点！</string>
+    <string name="talk_set_network">设置网络</string>
+    <string name="talk_speaking"> 在讲话</string>
+    <string name="talk_speak_me">我 在讲话</string>
+    <string name="talk_unconnected">会话未建立&#8230;</string>
+    <string name="server_disconnected">服务器连接失败</string>
+
+    <string name="talk_call_custom_session_create">[创建临时组]</string>
+    <string name="fileMaxError">文件过大!!</string>
+
+    <string name="talk_channel_tip_delete">预定义组（%s）已被移除</string>
+    <string name="talk_channel_tip_create">您被（%s）加入了此预定义组</string>
+    <string name="talk_channel_tip_alert_err">群呼上线失败</string>
+    <string name="talk_center_call_name">调度中心</string>
+
+    <!--可视调度-->
+    <string name="spot_dispatch">可视调度</string>
+    <string name="device_current_location_state">当前定位模式:</string>
+    <string name="set_start_time">选择起始时间：</string>
+    <string name="set_continue_time">设置时间跨度：</string>
+    <string name="zero_hour">0小时</string>
+    <string name="eight_hour">8小时</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="to">至</string>
+    <string name="history_route">历史轨迹</string>
+    <string name="start_time">起始时间：</string>
+    <string name="end_time">终止时间：</string>
+    <string name="device_detail">个人详情</string>
+    <string name="device_trace">目标追踪</string>
+    <string name="device_nearby">附近的人</string>
+    <string name="trace_remaining_time">追踪剩余时间：</string>
+    <string name="select_view">选择查看</string>
+    <string name="all_device">全部人员</string>
+    <string name="account">账号:</string>
+    <string name="current_check">当前查看</string>
+    <string name="shutdown">关机</string>
+    <string name="away">离开</string>
+    <string name="online2">联机</string>
+    <string name="busy">忙碌</string>
+    <string name="nodisturb">免打扰</string>
+    <string name="dispatch_circling_list">用户列表</string>
+    <string name="select_all">全选</string>
+    <string name="user_delete">移除</string>
+    <string name="user_intercom">对讲</string>
+    <string name="abandon">取消</string>
+    <string name="unknown_address">未知地理位置</string>
+    <string name="request_fail">请求失败</string>
+    <string name="volume_microphone_desc">启用声音放大器可将外放音量适当增大</string>
+    <string name="increase_intercom_quailty_desc">可以提高您讲话的音质，但同时您讲话时所消耗的流量就会增加</string>
+    <string name="screen_ptt_desc">是否支持屏幕PTT按键点击讲话方式（点击即可讲话，再点一下释放），同时仍支持按住讲话</string>
+    <string name="volume_key_desc">是否将音量下键作为PTT物理按键</string>
+    <string name="auto_answer_desc">有对讲来电时，是否自动应答</string>
+    <string name="no_disturb_desc">开启此项后，所有的对讲来电将会自动拒接</string>
+    <string name="attach_channel_desc">选择附着预定义组后，下次登录时预定义组自动连接</string>
+    <string name="no_traget_position">目标设备无最新定位</string>
+    <string name="rename">重命名</string>
+    <string name="delete_temp_group">删除记录</string>
+
+
+    <string name="setting_sensor_sensitivity">定位传感器灵敏度</string>
+    <string name="setting_set_sensor_sensitivity">设置定位传感器灵敏度</string>
+    <string name="setting_low_sensor_sensitivity">低灵敏度</string>
+    <string name="setting_normal_sensor_sensitivity">普通灵敏度</string>
+    <string name="sensor_sensitivity_low">低</string>
+    <string name="sensor_sensitivity_normal">普通</string>
+
+    <string name="download_failure">下载失败</string>
+    <string name="confirm_invite_session">确认邀请会话吗</string>
+
+    <string name="get_imsi_failure">获取手机号失败</string>
+
+    <string name="more_feature">更多功能</string>
+    <string name="more_option_broadcast">广播</string>
+    <string name="input_contact_number_or_name">请输入姓名或号码进行搜索</string>
+
+    <string name="no_history_session_record">无会话记录</string>
+    <string name="menu_empty_session">清空会话记录</string>
+    <string name="menu_select">选择</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_refresh_success">刷新成功</string>
+    <string name="confirm_delete_session">确认删除会话记录</string>
+    <string name="no_history_session">暂无会话记录</string>
+
+    <string name="history_session_lock">锁定该预定义组</string>
+    <string name="history_session_unlock">解锁该预定义组</string>
+    <string name="history_session_media_share">媒体共享</string>
+    <string name="history_session_delete_session">删除该会话记录</string>
+    <string name="history_session_hang_up">挂断对讲</string>
+    <string name="intercom_ptt_end_talk">结束对讲</string>
+
+    <string name="intercom_ptt_steals">抢断模式开启</string>
+    <string name="intercom_ptt_unsteals">抢断模式关闭</string>
+    <string name="intercom_ptt_collection">保存临时组</string>
+    <string name="intercom_ptt_switch_bluetooth">切换蓝牙耳机</string>
+    <string name="intercom_ptt_lastest_audio_record">最新语音记录</string>
+    <string name="intercom_ptt_group_call">群呼上线</string>
+    <string name="intercom_ptt_invitation">添加成员</string>
+    <string name="intercom_ptt_set_channel">设置预定义组</string>
+    <string name="channel_talk_start">会话已开启</string>
+    <string name="channel_talk_nowork">会话不可用</string>
+    <string name="channel_talk_end">会话已关闭</string>
+    <string name="menu_channel_temp_group">新建临时组</string>
+    <string name="menu_select_contacts">选择联系人</string>
+    <string name="built_temp_group_contact">通讯录</string>
+    <string name="built_temp_group_select_empty">至少选择两个人才能操作</string>
+    <string name="select_history_session">选择会话记录</string>
+    <string name="menu_media_share_send_picture">发送图片</string>
+    <string name="menu_media_share_send_video">发送视频</string>
+    <string name="menu_media_share_send_audio">发送语音</string>
+    <string name="menu_media_share_send_position">发送位置</string>
+    <string name="menu_media_share_select_record">选择记录</string>
+    <string name="menu_media_share_file">查看共享文件</string>
+    <string name="media_share_load_more">点击加载更多</string>
+    <string name="media_share_send_audio">发送语音</string>
+    <string name="media_share_send_audio_record_time">录制时长</string>
+    <string name="media_share_click_record_audio">点击说话</string>
+    <string name="member_list">成员列表</string>
+    <string name="dispatcher_set_hour_error">设置小时数值错误</string>
+    <string name="dispatcher_set_min_error">设置分钟数值错误</string>
+    <string name="dispatcher_set_sec_error">设置秒钟数值错误</string>
+    <string name="set_second">秒:</string>
+    <string name="set_minute">分:</string>
+    <string name="set_hour">时:</string>
+
+    <!--ErrorCode-->
+    <string name="phone_number_hint">请输入手机号码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="incorrent_phone_number">请输入正确的手机号码</string>
+    <string name="login_error_pwd_wrong">密码/验证码错误</string>
+    <string name="auth_109">该号码短信验证次数已过每天6条的限制</string>
+    <string name="login_error_sms_wrong">验证码错误</string>
+    <string name="login_error_password_wrong">密码错误</string>
+    <string name="login_error_data_invalid">登录信息过期，\n应用将自动清除登录数据</string>
+    <string name="phone_number_not_register">该号码未开户,\n请联系管理员</string>
+    <string name="invalid_device">设备未录入，请联系管理员</string>
+    <string name="manual_login_fail">用户名或密码错误</string>
+    <string name="forbid_login_no_sim">没有SIM卡，禁止登录</string>
+    <string name="forbid_login_invalid_imsi">无效的IMSI，禁止登录</string>
+    <string name="forbid_login_sms_limit">发送短信次数已超过每天6条的限制</string>
+    <string name="forbid_login_no_read_sms_permission">没有读取短信的权限，请开启</string>
+    <string name="detect_sms_failed">解析验证码失败！</string>
+    <string name="login_error_phone_sms">无效的imsi，需要手动输入手机号验证码登录</string>
+    <string name="login_error_phone_pwd">无效的imsi，需要手动输入手机号密码</string>
+    <string name="login_error_need_sms">该号码需要短信验证</string>
+    <string name="login_error_receive_sms">验证码已发送</string>
+    <string name="login_error_invalid_app_key">无效的appKey，\n禁止登录</string>
+
+
+    <string name="hint_pwd">请输入密码</string>
+    <string name="hint_sms_code">输入验证码</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="qptt_login">登录</string>
+    <string name="be_logging_in">登录中</string>
+    <string name="inapposite_network">数据网络未开启</string>
+    <string name="not_cdma">非电信卡，无法使用</string>
+    <string name="bad_network">当前网络较差，无法登录，请稍后再试</string>
+    <string name="invalid_manual_login">当前账户不允许手动登录</string>
+    <string name="sim_swap_dialog_hint">检测到您已更换SIM卡，请立刻重启APP</string>
+    <string name="hint_pin_code">请输入验证码</string>
+    <string name="be_detecting_sms_code">解析验证码</string>
+    <string name="input_verification_code">输入验证码</string>
+    <string name="verification_code_illegal">验证码非法</string>
+    <string name="remember_pwd">记住密码</string>
+    <string name="reacquire">再次获取</string>
+    <string name="logout_success">登出成功</string>
+    <string name="login_time_out">连接超时</string>
+
+    <!--用户控制-->
+    <string name="talk_system_user_ctl_turn_off">您的账户被管理员摇毙，程序将会自动退出！</string>
+    <string name="talk_system_user_ctl_turn_reset">管理员要求您重新登录登录！</string>
+    <string name="talk_system_limit_call_in">您被管理员限制临时呼入！</string>
+    <string name="relieve_talk_system_limit_call_in">您被管理员解除临时呼入限制！</string>
+    <string name="talk_system_limit_call_out">您被管理员限制临时呼出！</string>
+    <string name="relieve_talk_system_limit_call_out">您被管理员解除临时呼出限制！</string>
+    <string name="talk_system_limit_channel">您被管理员限制进行所有预定义组通话！</string>
+    <string name="relieve_talk_system_limit_channel">您被管理员解除进行所有预定义组通话限制！</string>
+
+
+    <string name="loc_service">位置服务</string>
+    <string name="sos_report">SOS位置上报</string>
+    <string name="dis_data_sync">位置服务数据同步</string>
+
+    <string name="txt_no_valid_network">网络连接不可用，请检查您的网络!</string>
+    <string name="txt_no_valid_wifi_tip">当前为可用WIFI,确定使用移动数据吗？</string>
+    <string name="cal_online">群呼上线</string>
+    <string name="talk_channel_tip_turn_off">预定义组（%s）已被限制</string>
+    <string name="talk_channel_tip_turn_on">预定义组（%s）已被恢复</string>
+</resources>

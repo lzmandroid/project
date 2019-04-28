@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ctchat.sample.widget.PullToRefreshView
+            android:id="@+id/message_pull_to_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparency"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_chat_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_contact_first_letter"
+                android:divider="@null" />
+
+        </com.ctchat.sample.widget.PullToRefreshView>
+
+        <RelativeLayout
+            android:id="@+id/chat_instant_message_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_input_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_chatting_mode"
+                android:button="@null"
+                android:checked="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_chat_model_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/cb_input_model"
+                android:layout_alignTop="@id/cb_input_model"
+                android:layout_toRightOf="@id/cb_input_model"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_chatting_voiceinput"
+                    android:text="@string/down_tlak"
+                    android:textColor="@color/voice_input_edge" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/btn_send"
+                    android:background="@drawable/intercom_more_default"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_chat_model_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cb_input_model"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/cb_more_msg"
+                    android:background="@drawable/shape_chatting_edit"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gray"
+                    android:text="@string/btn_send"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@id/cb_more_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_send"
+                    android:layout_toLeftOf="@+id/btn_send"
+                    android:layout_toStartOf="@+id/btn_send"
+                    android:background="@drawable/intercom_more_default"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/chat_instant_message_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/ll_ibtn_local_upload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/upload_picture_from_local"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/ll_ibtn_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/video_recorder"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ll_ibtn_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/take_photo"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ll_ibtn_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/location"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_record"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:alpha="1"
+        android:background="@drawable/chat_top_voice_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/chat_icon_voice1" />
+
+        <TextView
+            android:id="@+id/tv_voice_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_record"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/voice_up_tips"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

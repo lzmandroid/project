@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:touchscreenBlocksFocus="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_contacts_list_item">
+        <TextView
+            android:id="@+id/tv_attachment_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsfsdfsd"
+            android:layout_centerVertical="true"
+            android:textColor="@color/contact_name_color"/>
+        <CheckBox
+            android:id="@+id/cb_attachment_channel_select"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:background="@drawable/selector_attachment_channel_select"/>
+
+    </RelativeLayout>
+</LinearLayout>

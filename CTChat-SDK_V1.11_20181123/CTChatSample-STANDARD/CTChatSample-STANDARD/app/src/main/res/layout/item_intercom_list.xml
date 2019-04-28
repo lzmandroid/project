@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_contacts_list_item"
+    >
+
+    <ImageView
+        android:id="@+id/iv_contact_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/groups_user" />
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_contact_photo"
+        android:text="tv_contact_name"
+        android:textColor="@color/contact_name_color"
+        android:layout_toLeftOf="@+id/ll_contact_state"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_contact_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/iv_contact_photo"
+        android:textColor="@color/contact_offline_color"
+        android:textSize="14sp" />
+
+<LinearLayout
+    android:id="@id/ll_contact_state"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_contact_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:text="lixian"
+        android:textColor="@color/contact_name_color"
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/iv_invite_background_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_ptt_default"
+        android:layout_centerVertical="true"/>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_intercom_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ll_contact_state"
+        android:src="@drawable/intercom_admin"
+        android:visibility="gone" />
+
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_bottom_color" />
+
+
+</RelativeLayout>

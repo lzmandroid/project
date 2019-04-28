@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_notice_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未读消息(1)"
+        android:textColor="@color/light_gray"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_notice_type"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/broadcast_msg_unread"
+            android:id="@+id/iv_notice_photo" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_enter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/iv_notice_details" />
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="标题"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_notice_date"
+            android:layout_alignLeft="@+id/tv_notice_content"
+            android:layout_alignStart="@+id/tv_notice_content" />
+
+        <TextView
+            android:id="@id/tv_notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:20:23"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/iv_notice_details"
+            android:layout_toStartOf="@id/iv_notice_details" />
+
+        <TextView
+            android:id="@+id/tv_notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jaksfhjahsfkljhakljshfkjhaskljfhkljashkfjhjkasdhfkjhasd"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray"
+            android:layout_below="@id/tv_notice_title"
+            android:layout_toRightOf="@+id/iv_notice_photo"
+            android:layout_toLeftOf="@+id/tv_notice_date" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

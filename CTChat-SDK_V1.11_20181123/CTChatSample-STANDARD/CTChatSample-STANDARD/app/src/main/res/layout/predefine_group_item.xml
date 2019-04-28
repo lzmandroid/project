@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_contacts_list_item"
+        android:descendantFocusability="blocksDescendants">
+
+        <RelativeLayout
+            android:id="@+id/ll_group_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_channel_state"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_predefine_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdsds"
+                android:textColor="@color/contact_name_color" />
+
+            <com.ctchat.sample.widget.MemberCountView
+                android:id="@+id/member_count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_predefine_group_name"
+                android:layout_below="@id/tv_predefine_group_name"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_call_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_count_view"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/iv_intercom_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="状态："/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/state_free"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@id/iv_channel_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:paddingBottom="2dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp" />
+
+    </RelativeLayout>
+</LinearLayout>

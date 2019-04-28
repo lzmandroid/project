@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_brocast"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/net_disconnected_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/net_disconnected_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/net_disconnect_notice"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_channel_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants">
+
+                <TextView
+                    android:id="@+id/tv_channel_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/channel"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_channel_left_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_channel_title"
+                    android:text="("
+                    android:textColor="@color/all_channel_count" />
+
+                <TextView
+                    android:id="@+id/tv_channel_online_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_channel_left_flag"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_channel_slash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_channel_online_count"
+                    android:text="/"
+                    android:textColor="@color/all_channel_count" />
+
+                <TextView
+                    android:id="@+id/tv_all_channel_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_channel_slash"
+                    android:textColor="@color/all_channel_count" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_all_channel_count"
+                    android:text=")"
+                    android:textColor="@color/all_channel_count" />
+
+            </RelativeLayout>
+
+            <com.ctchat.sample.widget.ListViewForScroll
+                android:id="@+id/lv_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@color/divider_bottom_color"
+                android:dividerHeight="1dp"
+                android:fastScrollEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="insideInset"
+                android:transcriptMode="normal"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_bottom_color" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

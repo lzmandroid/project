@@ -1,0 +1,239 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/top_view_color</item>
+        <item name="colorPrimaryDark">@color/top_view_color</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="upload_info_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="upload_hint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="upload_info">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="style_radio_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/selector_main_radio_btn_text</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="style_radio_btn_ldpi">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_main_radio_btn_bg_ldpi</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/selector_main_option_text</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="style_radio_more_btn_ldpi">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_main_option_ldpi</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/selector_main_option_text</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="style_radio_btn_center">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="style_login_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/shape_login_edit</item>
+    </style>
+
+    <style name="style_text_input_layout_error">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="style_text_input_layout_hint">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="gray_line" parent="line">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <!--LoginButton-->
+    <style name="theme_login_btn" parent="Theme.AppCompat.Light">
+        <!-- 点击高亮时背景颜色 -->
+        <item name="colorControlHighlight">@color/login_btn_pressed</item>
+        <!-- 按钮正常背景颜色 -->
+        <item name="colorButtonNormal">@color/login_btn_default</item>
+    </style>
+
+    <style name="style_login_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/login_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:theme">@style/theme_login_btn</item>
+    </style>
+
+    <style name="style_side_menu">
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_bg_side_menu</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="CustomToggleButton">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="onColor">@color/toggle_button_open</item>
+        <item name="offColor">@color/toggle_button_close</item>
+        <item name="spotColor">@color/white</item>
+        <item name="offBorderColor">@color/toggle_button_close</item>
+        <item name="toggleBorderWidth">2dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_popupwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_popupwindow_exit</item>
+    </style>
+
+    <style name="myTransparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/incoming_alert_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="popupwindow_contact_list_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_contact_select_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_contact_select_hide</item>
+    </style>
+
+
+    <style name="DefaultSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/DefaultIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="DefaultIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+
+    <!-- 定义更多界面item布局样式 -->
+    <style name="MoreOptionLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/selector_contacts_list_item</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- 定义更多界面字体样式 -->
+    <style name="MoreOptionsText">
+        <item name="android:textColor">@color/selector_contact_name_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CustomHintMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/selector_contact_number_text</item>
+        <item name="android:background">@drawable/selector_contacts_list_item</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="Theme.Light.Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <!-- 底部弹出的dialog -->
+    <!-- 弹出框动画 由下至上 -->
+    <style name="dialogStyle" parent="android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+</resources>

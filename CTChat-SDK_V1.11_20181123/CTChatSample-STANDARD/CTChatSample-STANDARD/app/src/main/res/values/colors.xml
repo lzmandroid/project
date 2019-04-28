@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_color">#1E90FF</color>
+    <color name="top_view_color">#2a303e</color>
+    <color name="light_gray">#666666</color>
+    <color name="contact_name_color">#222222</color>
+    <color name="contact_online_color">#1aa4fc</color>
+    <color name="contact_offline_color">#ccc</color>
+    <color name="bg_contact_first_letter">#f8f8f8</color>
+    <color name="white">#ffffff</color>
+    <color name="divider_bottom_color">#dedede</color>
+    <color name="transparency">#00000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="background_gray">#ffe8e8e8</color>
+    <color name="bg_contacts_A_Z">#EEEEEE</color>
+    <color name="bg_contact_detail">#2a303e</color>
+    <color name="bg_start_talk_default">#1aa4fc</color>
+    <color name="bg_start_talk_click">#2185de</color>
+    <color name="bg_immediate_message_default">#33cbcc</color>
+    <color name="bg_immediate_message_click">#23b6b6</color>
+    <color name="bg_temp_group_default">#EE7AE9</color>
+    <color name="bg_temp_group_click">#D15FEE</color>
+    <color name="light_black">#313131</color>
+
+    <color name="dark_gray">#555</color>
+    <!--深灰色-->
+    <color name="black">#000000</color>
+    <!--黑色-->
+    <color name="gray">#808080</color>
+    <!--灰色 -->
+    <color name="red">#FF0000</color>
+    <!--红色 -->
+
+    <color name="yellow">#EBB609</color>
+    <!--黄色-->
+    <color name="half_transparency">#3c000000</color>
+    <!--半透明-->
+    <color name="linen">#FAF0E6</color>
+    <!--亚麻色 -->
+    <color name="white_transparency">#d1ffffff</color>
+    <color name="white_dark_transparency">#dfffffff</color>
+    <color name="grey">#B6B6B6</color>
+    <color name="textcolor_bottombar">#1AA1E6</color>
+    <color name="light_blue">#33B5E5</color>
+    <color name="btn_send">#C0C5D2</color>
+    <color name="btn_send_enable">#1993fe</color>
+    <color name="ptt_mic_type_click">#22babb</color>
+    <color name="ptt_mic_type_default">#33cbcc</color>
+    <color name="ptt_mic_click">#2185de</color>
+    <color name="ptt_mic_default">#1aa4fc</color>
+    <color name="voice_input_pressed">#eeeeee</color>
+    <color name="voice_input_dt">#ffffff</color>
+    <color name="voice_input_edge">#8C8C8C</color>
+    <color name="thirty_percent_transparency">#4dffffff</color>
+    <color name="video_camera_progress">#28A5F9</color>
+    <color name="cancel_select_contact_default">#ec823b</color>
+    <color name="cancel_select_contact_click">#dd7530</color>
+    <color name="location_message_background">#9000</color>
+    <color name="toggle_button_open">#1aa4fc</color>
+    <color name="toggle_button_close">#cccccc</color>
+    <color name="bg_advance_setting">#c0c5d2</color>
+    <color name="bg_traffic_mobile">#FF0000FF</color>
+    <color name="bg_traffic_wifi">#FF00FFFF</color>
+    <color name="bg_traffic_ptt">#FFFF0000</color>
+    <color name="bg_pop">#4dffffff</color>
+    <color name="popwindow_context_bg">#ffffff</color>
+    <color name="net_disconnected_bg">#7ff25b3b</color>
+    <color name="contact_number_bg">#666666</color>
+    <color name="login_btn">#20659d</color>
+    <color name="message_date">#999999</color>
+    <color name="more_dark_gray">#ff5d5d5d</color>
+    <color name="list_item_click">#E0FFFF</color>
+
+    <color name="incoming_alert_bg">#80000000</color>
+    <color name="join_group_call">#31cfcb</color>
+    <color name="not_join_group_call">#f25d3c</color>
+    <color name="bg_group_call">#cc000000</color>
+    <color name="bg_brocast">#F8F8F8</color>
+    <color name="bg_more">#33000000</color>
+
+
+    <!-- Dispatch -->
+    <color name="selection_background_color">#FEBB20</color>
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+    <color name="chat_bg">#F4F4F6</color>
+    <color name="chat_line">#E8E8E9</color>
+    <color name="French_grey">#F3F3F3</color>
+    <color name="chat_input">#FDFDFD</color>
+    <color name="chat_input_line">#D0D1D4</color>
+    <color name="chat_function_line">#D1D3D5</color>
+    <color name="device_intercom_default">#375e80</color>
+    <color name="device_intercom_press">#284866</color>
+    <color name="device_select_cancel_default">#4f4b43</color>
+    <color name="device_select_cancel_press">#303536</color>
+    <color name="device_clear_default">#2c99db</color>
+    <color name="device_clear_press">#2681bb</color>
+    <color name="group_call_pressed">#464c5b</color>
+    <color name="channel_title_bg">#333333</color>
+    <color name="all_channel_count">#aaaaaa</color>
+    <color name="online_channel_count">#f25b3b</color>
+    <color name="aboutbackground">#f3f3f3</color>
+    <color name="bg_title_bar">#343641</color>
+    <color name="login_btn_pressed">#1db7aa</color>
+    <color name="login_btn_default">#5ec6bd</color>
+
+    <!-- LDPI -->
+    <color name="phone_number_txt_color">#ffffff</color>
+    <color name="input_text_bg">#54687c</color>
+    <color name="input_text_bg_disable">#35485b</color>
+    <color name="hint_color">#999999</color>
+    <color name="ldpi_login_button">#2486dd</color>
+    <color name="radiobutton_bg_normal">#afb9c5</color>
+    <color name="radiobutton_bg_focus">#d9775b</color>
+    <color name="call_dispatcher_text">#f25b3c</color>
+    <color name="call_dispatcher_focused">#fc765b</color>
+    <color name="bg_contact_item_select">#fc765b</color>
+    <color name="sliding_transparent_background">#5F000000</color>
+    <color name="report_picture">#BF8FBD</color>
+    <color name="report_video">#82C2D6</color>
+    <color name="report_history">#B8BA6B</color>
+    <color name="light_grey">#D3D3D3</color>
+
+    <!--登录-->
+    <color name="gray_edit_phone">#9d9ea8</color>
+    <color name="login_edit_phone_solid">#525360</color>
+    <color name="login_edit_sms_code_hint">#5f5f6d</color>
+    <color name="login_btn_solid">#1aa4fc</color>
+    <color name="login_btn_solid_press">#3d3f4e</color>
+    <color name="btn_login">#525360</color>
+    <color name="app_bg_bottom">#21212D</color>
+    <color name="message_blue_dt">#3298D8</color>
+    <color name="shape_line">#EBEBEB</color>
+    <color name="register_btn_bg_disable">#b1b8c5</color>
+    <color name="register_btn_enable">#d87256</color>
+    <color name="register_btn_pressed">#f25b3b</color>
+    <color name="broadcast_time_color">#f68163</color>
+    <color name="broadcast_close">#e55a45</color>
+    <color name="report_btn_pressed">#1aa4fc</color>
+    <color name="run_broadcast_title_bg">#3e404b</color>
+</resources>

@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ctchat.sample"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    flavorDimensions 'default'
+
+    productFlavors {
+        ct_standard{
+            buildConfigField "String", "server", '\"http://42.123.65.204:9080/ptt/rest/mix/\"'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        lintOptions {
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+        packagingOptions {
+            exclude 'ffmpeg-3.2.1-1.3.jar'
+            pickFirst 'protobuf.meta'
+            pickFirst  'META-INF/maven/org.bytedeco.javacpp-presets/opencv/pom.properties'
+            pickFirst  'META-INF/maven/org.bytedeco.javacpp-presets/opencv/pom.xml'
+            pickFirst  'META-INF/maven/org.bytedeco.javacpp-presets/ffmpeg/pom.properties'
+            pickFirst  'META-INF/maven/org.bytedeco.javacpp-presets/ffmpeg/pom.xml'
+        }
+
+        testOptions {
+            unitTests {
+                includeAndroidResources = true
+            }
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs'] //这里就不要再加abiFilter了
+        }
+    }
+
+
+    tasks.matching {it instanceof Test}.all {
+        testLogging.events = ["failed", "passed", "skipped"]
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+        }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.so','*.aar'], dir: 'libs',)
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.robolectric:robolectric:3.8"
+    testImplementation "org.mockito:mockito-core:2.11.0"
+
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+    implementation 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3'
+    //
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation files('libs/fastjson-1.2.41.jar')
+    implementation files('libs/javacv.jar')
+    implementation files('libs/javacpp.jar')
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_more_window_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_more">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_bg"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_broadcast"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/selector_contacts_list_item">
+
+                <TextView
+                    android:id="@+id/tv_broadcast_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/broadcast"
+                    android:textColor="@color/contact_number_bg"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/iv_broadcast_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_dot_update"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/tv_broadcast_main"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_bottom_color" />
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/selector_contacts_list_item">
+
+                <TextView
+                    android:id="@+id/tv_setting_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting"
+                    android:textColor="@color/contact_number_bg"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
